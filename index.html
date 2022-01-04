@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="content">
+                <h2>01</h2>
+                <h3>Card One</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing 
+                    elit. Obcaecati veniam soluta magni voluptatem molestiae
+                    fugit quod et veritatis dolore, possimus hic velit libero
+                    quia optio sequi deserunt enim voluptas nostrum.
+                </p>
+                <a href="#">More Information</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <h2>02</h2>
+                <h3>Card Two</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing 
+                    elit. Obcaecati veniam soluta magni voluptatem molestiae
+                    fugit quod et veritatis dolore, possimus hic velit libero
+                    quia optio sequi deserunt enim voluptas nostrum.
+                </p>
+                <a href="#">More Information</a>
+
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <h2>03</h2>
+                <h3>Card Three</h3>
+                
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing 
+                    elit. Obcaecati veniam soluta magni voluptatem molestiae
+                    fugit quod et veritatis dolore, possimus hic velit libero
+                    quia optio sequi deserunt enim voluptas nostrum.
+                </p>
+                <a href="#">More Information</a>
+
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelector(".card"), {
+            max: 25,
+            speed: 400,
+            glare:true,
+            "max-glare": .5,
+        });
+        
+        //It also supports NodeList
+        VanillaTilt.init(document.querySelectorAll(".card"));
+    </script>
+
+</body>
+</html>
